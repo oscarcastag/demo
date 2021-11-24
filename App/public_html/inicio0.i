@@ -1,0 +1,8 @@
+&GLOBAL-DEFINE OUT PUT UNFORMATTED
+DEF VAR vprog AS CHAR.
+DEF VAR vtema AS CHAR.
+DEF VAR v-temas  AS CHAR.
+DEF STREAM paso.
+OUTPUT STREAM paso TO xxx.txt.
+PROPATH = PROPATH + ",./ton,.".
+

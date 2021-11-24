@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<swid:software_identification_tag xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:swid="http://standards.iso.org/iso/19770/-2/2008/schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19770/-2/2008/schema.xsd software_identification_tag.xsd">
+  <swid:entitlement_required_indicator>false</swid:entitlement_required_indicator>
+  <swid:product_title>RockJSV1.0</swid:product_title>
+  <swid:product_version>
+    <swid:name>1.0.0</swid:name>
+    <swid:numeric>
+      <swid:major>1</swid:major>
+      <swid:minor>0</swid:minor>
+      <swid:build>0</swid:build>
+      <swid:review>0</swid:review>
+    </swid:numeric>
+  </swid:product_version>
+  <swid:software_creator>
+    <swid:name>Focus on services SA de CV</swid:name>
+    <swid:regid>regid.2018-08.com.focusonservices</swid:regid>
+  </swid:software_creator>
+  <swid:software_licensor>
+    <swid:name>Focus on services SA de CV</swid:name>
+    <swid:regid>regid.2018-08.com.focusonservices</swid:regid>
+  </swid:software_licensor>
+  <swid:software_id>
+    <swid:unique_id>df507f5c-4736-4487-a836-34368c0824b3</swid:unique_id>
+    <swid:tag_creator_regid>regid.2018-08.com.focusonservices</swid:tag_creator_regid>
+  </swid:software_id>
+  <swid:tag_creator>
+    <swid:name>Focus on services SA de CV</swid:name>
+    <swid:regid>regid.2018-08.com.focusonservices</swid:regid>
+  </swid:tag_creator>
+  <swid:serial_number/>
+  <swid:license_linkage>
+    <swid:channel_type>Retail</swid:channel_type>
+    <swid:channel_name>FocusonServices SA de CV</swid:channel_name>
+    <swid:customer_type>Corporate</swid:customer_type>
+  </swid:license_linkage>
+</swid:software_identification_tag>

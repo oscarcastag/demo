@@ -1,0 +1,608 @@
+<?php
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: SAMEORIGIN');
+header('X-XSS-Protection: 1;mode=block');
+date_default_timezone_set('America/Mexico_City');
+$globalNombre = "Focus on Services SA de CV";
+?>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Rockjs Framework | Focus on Services SA de CV</title>
+        <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 10]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="description" content="#">
+        <meta name="keywords"
+              content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+        <meta name="author" content="#">
+        <!-- Favicon icon -->
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+        <!-- Required Fremwork -->
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/css/bootstrap.min.css">
+        <!-- themify-icons line icon -->
+        <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+        <!-- ico font -->
+        <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+        <!-- flag icon framework css -->
+        <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+        <!-- Menu-Search css -->
+        <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+        <!-- Style.css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- Style RockJs -->
+        <link rel="stylesheet" href="asset/css/rockjs.css">
+        <!-- ICON personalite CSS -->
+        <link rel="stylesheet" href="asset/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="asset/css/pe-icon-7-stroke/css/helper.css">
+        <!-- JQuery Export datatable csv,excel pdf -->
+        <!--        <link rel="stylesheet" href="asset/css/jquery.dataTables.min.css">-->
+        <!--link rel="stylesheet" href="asset/css/buttons.dataTables.min.css"-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css"/>
+
+        <!-- Draggable personalite CSS -->
+        <script src="asset/js/sweetalert2/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="asset/js/sweetalert2/sweetalert2.min.css">
+        <!-- Style RockJs -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+    </head>
+
+    <body>
+        <!-- Pre-loader start -->
+        <div class="theme-loader">
+            <div class="ball-scale">
+                <div class='contain'>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                    <div class="ring"><div class="frame"></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Pre-loader end -->
+        <div id="pcoded" class="pcoded">
+            <div class="pcoded-overlay-box"></div>
+            <div class="pcoded-container navbar-wrapper">
+
+                <nav class="navbar header-navbar pcoded-header">
+                    <div class="navbar-wrapper">
+
+                        <div class="navbar-logo">
+                            <a class="mobile-menu" id="mobile-collapse" href="#!">
+                                <i class="ti-menu"></i>
+                            </a>
+                            <a class="mobile-search morphsearch-search" href="#">
+                                <i class="ti-search"></i>
+                            </a>
+                            <a href="menu.php">
+                                <img class="img-fluid" src="asset/images/logo.png"  alt="Focus on Services" />
+                            </a>
+                            <a class="mobile-options">
+                                <i class="ti-more"></i>
+                            </a>
+                        </div>
+
+                        <div class="navbar-container container-fluid">
+                            <ul class="nav-left">
+                                <li>
+                                    <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                                </li>
+
+                                <li>
+                                    <a href="#!" onclick="javascript:toggleFullScreen()">
+                                        <i class="ti-fullscreen"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="nav-right">
+
+                                <li class="user-profile header-notification">
+                                    <a href="#!">
+									<img src="asset/images/img_avatar3.png" class="img-radius" alt="User-Profile-Image">
+                                        <span><?php echo $globalNombre; ?></span>
+                                        <i class="ti-angle-down"></i>
+                                    </a>
+                                    <ul class="show-notification profile-notification">
+                                        <li>
+                                            <a href="index.html" onclick="louout()">
+                                                <i class="ti-layout-sidebar-left"></i> Salir
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </nav>
+
+                            <!-- Sidebar inner chat end-->
+                            <div class="pcoded-main-container">
+                                <div class="pcoded-wrapper">
+                                    <nav class="pcoded-navbar">
+                                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                                        <div class="pcoded-inner-navbar main-menu">
+
+                                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Navegación</div>
+                                            <ul class="pcoded-item pcoded-left-item">
+                                                  <ul class="pcoded-item pcoded-left-item">
+												<li class="pcoded-hasmenu">
+													<a href="javascript:void(0)">
+														<span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+														<span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+														<span class="pcoded-mcaret"></span>
+													</a>
+													<ul class="pcoded-submenu">
+														<li class="">
+															<a href="grafica.html">
+																<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+																<span class="pcoded-mtext" data-i18n="nav.dash.default">Proveedores</span>
+																<span class="pcoded-mcaret"></span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="">    <a href="addprov.php">        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>        
+													 <span class="pcoded-mtext" data-i18n="nav.navigate.main">Proveedores</span>        
+													 <span class="pcoded-mcaret"></span>    </a>
+												</li>
+												<li class="">    <a href="menu.php">        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>        
+													 <span class="pcoded-mtext" data-i18n="nav.navigate.main">Bienvenida</span>        
+													 <span class="pcoded-mcaret"></span>    </a>
+												</li>                                            </ul>
+												<li class="">    <a href="index.html">        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>        
+													 <span class="pcoded-mtext" data-i18n="nav.navigate.main">Salir</span>        
+													 <span class="pcoded-mcaret"></span>    </a>
+												</li>                                        </div>
+                                    </nav>
+                                    <div class="pcoded-content">
+                                        <div class="pcoded-inner-content">
+
+                                            <div class="main-body">
+                                                <div class="page-wrapper">
+
+                                                    <div class="page-body">                    
+			                                            <div class="row">
+
+                                            <!-- user card start -->
+                                            <div class="col-sm-4">
+                                                <div class="card bg-c-pink text-white widget-visitor-card">
+                                                    <div class="card-block-small text-center">
+                                                        <h2>1,658</h2>
+                                                        <h6>Proveedores diarios</h6>
+                                                        <i class="ti-user"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="card bg-c-blue text-white widget-visitor-card">
+                                                    <div class="card-block-small text-center">
+                                                        <h2>5,678</h2>
+                                                        <h6>Proveedores Semanales</h6>
+                                                        <i class="icofont icofont-paper"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="card bg-c-yellow text-white widget-visitor-card">
+                                                    <div class="card-block-small text-center">
+                                                        <h2>5,678</h2>
+                                                        <h6>Proveedores ultimo mes</h6>
+                                                        <i class="icofont icofont-ui-alarm"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- user card end -->
+
+                                            <!-- Proveedor Chart Start -->
+                                            <div class="col-md-12">
+                                                <div class="card visitor-chart-card">
+                                                    <div class="card-header">
+                                                        <div class="card-header-left">
+                                                            <h5>Proveedores</h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block p-b-40">
+                                                        <div id="visitor-list-graph" style="width:100%;height:400px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Proveedor Chart End -->
+
+                                            <!-- Tasks Sale Start -->
+                                            <div class="col-md-12 col-xl-6 ">
+                                                <div class="card task-sale-card ">
+                                                    <div class="card-header ">
+                                                        <div class="card-header-left ">
+                                                            <h5>Hoy</h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block-big ">
+                                                        <h2 class="text-c-green d-inline-block m-b-40 f-50 ">23</h2>
+                                                        <div class="d-inline-block m-l-5 super ">
+                                                            <p class="text-muted  m-b-0 f-w-400 ">Compras</p>
+                                                            <p class="text-muted  m-b-0 f-w-400 ">Terminadas</p>
+                                                        </div>
+                                                        <div class="row ">
+                                                            <div class="col-sm-5 ">
+                                                                <h3 class="text-muted d-inline-block m-b-40 ">23</h3>
+                                                                <div class="d-inline-block m-l-5 top m-t-10">
+                                                                    <p class=" m-b-0 f-w-400 f-14 text-uppercase">Compras hoy </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-5 ">
+                                                                <h3 class="text-muted d-inline-block m-b-40 ">12</h3>
+                                                                <div class="d-inline-block m-l-5 top m-t-10">
+                                                                    <p class=" m-b-0 f-w-400 f-14 text-uppercase">Compras Pendientes</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="b-t-default p-t-20 m-t-5">
+                                                            <img src="assets/images/widget/user-3.png " alt=" " class="img-rounded top ">
+                                                            <div class="d-inline-block m-l-10 ">
+                                                                <p class="text-muted m-b-5">Asignado por</p>
+                                                                <span class="f-w-400 f-16 text-c-green">Focus on Services SA</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Summery Start -->
+                                            <div class="col-md-12 col-xl-6">
+                                                <div class="card summery-card">
+                                                    <div class="card-header">
+                                                        <div class="card-header-left ">
+                                                            <h5>Resumen</h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 b-r-default p-b-30">
+                                                                <h2 class="f-w-400">13</h2>
+                                                                <p class="text-muted f-w-400">Actividad de Proveedores</p>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-blue" role="progressbar"
+                                                                         aria-valuemin="0" aria-valuemax="100"
+                                                                         style="width:50%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-30">
+                                                                <h2 class="f-w-400">28</h2>
+                                                                <p class="text-muted f-w-400">Compras Completadas</p>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-pink" role="progressbar"
+                                                                         aria-valuemin="0" aria-valuemax="100"
+                                                                         style="width:50%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <canvas id="summary" height="80"></canvas>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <h2 class="f-w-400">76</h2>
+                                                                <p class="text-muted f-w-400">Compras Abiertas</p>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-green" role="progressbar"
+                                                                         aria-valuemin="0" aria-valuemax="100"
+                                                                         style="width:50%">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- summary end -->
+                                            <!-- Tasks Sale End -->
+
+                                            <!-- Profit Proveedor Start -->
+                                            <div class="col-md-6 col-xl-4 ">
+                                                <div class="card ">
+                                                    <div class="card-block ">
+                                                        <h2 class="text-center f-w-400 ">$45,567</h2>
+                                                        <p class="text-center text-muted ">Beneficio mensual</p>
+                                                        <canvas id="monthlyprofit-1" height="30"></canvas>
+                                                        <div class="m-t-20">
+                                                            <div class="row ">
+                                                                <div class="col-6 text-center ">
+                                                                    <h6 class="f-20 f-w-400">$6,234</h6>
+                                                                    <i class="icofont icofont-caret-up text-c-blue f-16"></i>
+                                                                    <p class="text-muted f-14 d-inline-block m-l-10 m-b-0">Hoy</p>
+                                                                </div>
+                                                                <div class="col-6 text-center ">
+                                                                    <h6 class="f-20 f-w-400">$4,387</h6>
+                                                                    <i class="icofont icofont-caret-down text-c-blue f-16 "></i>
+                                                                    <p class="text-muted f-14 d-inline-block m-l-10 m-b-0 ">
+                                                                        Ayer</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xl-4 ">
+                                                <div class="card ">
+                                                    <div class="card-block ">
+                                                        <h2 class="text-center f-w-400 ">2,413</h2>
+                                                        <p class="text-center text-muted ">Compras totales</p>
+                                                        <canvas id="monthlyprofit-2" height="30"></canvas>
+                                                        <div class="m-t-20">
+                                                            <div class="row ">
+                                                                <div class="col-6 text-center ">
+                                                                    <h6 class="f-20 f-w-400">1578</h6>
+                                                                    <i class="icofont icofont-caret-down text-c-pink f-16 "></i>
+                                                                    <p class="text-muted f-14 d-inline-block m-l-10 m-b-0 ">
+                                                                        Hoy</p>
+                                                                </div>
+                                                                <div class="col-6 text-center ">
+                                                                    <h6 class="f-20 f-w-400">1028</h6>
+                                                                    <i class="icofont icofont-caret-up text-c-pink f-16 "></i>
+                                                                    <p class="text-muted f-14 d-inline-block m-l-10 m-b-0 ">
+                                                                        Ayer</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xl-4 ">
+                                                <div class="card ">
+                                                    <div class="card-block ">
+                                                        <h2 class="text-center f-w-400 ">8,421</h2>
+                                                        <p class="text-center text-muted ">Proveedores</p>
+                                                        <canvas id="monthlyprofit-3" height="30"></canvas>
+                                                        <div class="m-t-20">
+                                                            <div class="row ">
+                                                                <div class="col-6 text-center ">
+                                                                    <h6 class="f-20 f-w-400">2,849</h6>
+                                                                    <i class="icofont icofont-caret-up text-c-yellow f-16 "></i>
+                                                                    <p class="text-muted f-14 d-inline-block m-l-10 m-b-0 ">
+                                                                        Hoy</p>
+                                                                </div>
+                                                                <div class="col-6 text-center ">
+                                                                    <h6 class="f-20 f-w-400">3,587</h6>
+                                                                    <i class="icofont icofont-caret-down text-c-yellow f-16 "></i>
+                                                                    <p class="text-muted f-14 d-inline-block m-l-10 m-b-0 ">
+                                                                        Ayer</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Profit Proveedor End -->
+
+                                            <!-- Proveedor Map Start -->
+                                            <div class="col-md-12 col-xl-7 ">
+                                                <div class="card unique-Proveedor-card o-hidden ">
+                                                    <div class="card-header">
+                                                        <div class="card-header-left">
+                                                            <h5 class="text-white">Compras</h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="text-white icofont icofont-simple-left "></i></li>
+                                                                <li><i class="text-white icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="text-white icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="text-white icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="text-white icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block p-0">
+                                                        <div class="card-block-small">
+                                                            <div id="world-map-vititors" style="width:100%;height:250px;"></div>
+                                                        </div>
+                                                        <div class="card-block-small footer-card">
+                                                            <div class="row justify-content-md-center">
+                                                                <div class="col-md-8">
+                                                                    <div class="row text-center p-t-15 p-b-15">
+                                                                        <div class="col-sm-6 f-prog">
+                                                                            <p class="f-16 m-0 f-w-400">Proveedores</p>
+                                                                            <span class="text-muted">29,703  (40%)</span>
+                                                                            <div class="progress m-t-10">
+                                                                                <div class="progress-bar bg-c-blue" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <p class="f-16 m-0 f-w-400">Ganacias</p>
+                                                                            <span class="text-muted">29,703  (60%)</span>
+                                                                            <div class="progress m-t-10">
+                                                                                <div class="progress-bar bg-c-green" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xl-5 ">
+                                                <div class="card view-card">
+                                                    <div class="card-block-big">
+                                                        <button class="btn btn-default btn-icon"><i class="icofont icofont-plus m-0 f-16 f-w-400"></i></button>
+                                                        <div class="text-center m-b-40">
+                                                            <div class="chart-div">
+                                                                <input type="text" class="dial" value="70" data-width="150" data-height="150" data-thickness=".2" data-linecap="round" data-displayprevious="true" data-displayInput="true" data-fgColor="#93BE52" data-angleoffset="180">
+                                                                <div class="chart-more-icon">
+                                                                    <span>5</span>
+                                                                    <p>MORE</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h4 class="text-center f-w-400">Compras recomendadas</h4>
+                                                        <p class="text-center f-w-400 text-muted m-b-40">Ultima actualizacion</p>
+                                                        <div class="border-img-view p-t-20 text-center">
+                                                            <a href="#!"><img src="assets/images/avatar-2.jpg" data-toggle="tooltip" title="Alia" alt="" class="img-40"></a>
+                                                            <a href="#!"><img src="assets/images/avatar-3.jpg" data-toggle="tooltip" title="Suzen" alt="" class="img-40 m-l-10"></a>
+                                                            <a href="#!"><img src="assets/images/avatar-4.jpg" data-toggle="tooltip" title="Lary Doe" alt="" class="img-40 m-l-10"></a>
+                                                            <a href="#!"><img src="assets/images/avatar-2.jpg" data-toggle="tooltip" title="Josephin Doe" alt="" class="img-40 m-l-10"></a>
+                                                            <button class="btn btn-success btn-icon m-l-10"><i
+                                                                    class="icofont icofont-plus m-0 f-16 f-w-400"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Proveedor Map End -->
+
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="styleSelector">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="bower_components/modernizr/js/modernizr.js"></script>
+    <script type="text/javascript" src="bower_components/modernizr/js/css-scrollbars.js"></script>
+
+    <!-- peity Chart js -->
+    <script src="bower_components/peity/js/jquery.peity.js "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="bower_components/chart.js/js/Chart.js"></script>
+    <!-- NVD3 chart -->
+    <script src="bower_components/d3/js/d3.js"></script>
+    <script src="bower_components/nvd3/js/nv.d3.js"></script>
+    <script src="assets/pages/chart/nv-chart/js/stream_layers.js"></script>
+    <!-- amchart js -->
+    <script src="assets/pages/widget/amchart/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/pie.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/ammap.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script src="assets/pages/widget/amchart/worldLow.js"></script>
+    <script src="assets/pages/widget/amchart/continentsLow.js"></script>
+    <!-- Morris Chart js -->
+    <script src="bower_components/raphael/js/raphael.min.js"></script>
+    <script src="bower_components/morris.js/js/morris.js"></script>
+    <!-- knob js -->
+    <script src="assets/pages/chart/knob/jquery.knob.js"></script>
+
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript" src="bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/analytic-dashboard.js"></script>
+
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/demo-12.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="MyFirstApp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+        table, td  {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+    <script src="../asset/js/angular.min.js"></script>
+    <script>
+        //<html ng-app="app">
+        angular.module('MyFirstApp', [])
+                .controller("FirstController", function ($scope, $http)
+                {
+
+                    $http.get("../../history_request.json")
+                            .success(function (data)
+                            {
+                                console.log(data);
+                                $scope.posts = data;
+                            })
+                            .error(function (err)
+                            {
+                                console.log(err);
+                            });
+                });
+    </script>
+    <body ng-controller="FirstController"> 
+        <h3>Historial de peticiones Aplicativo RockJS</h3>
+        <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>Fecha y hora</th>
+                    <th>Usuario</th>
+                    <th>IP Adress</th>
+                    <th>Method</th>
+                    <th>Peticiones</th>
+                </tr>
+                <tr ng-repeat="post in posts">
+                    <td>{{post.DATE}}</td>
+                    <td>{{post.USER}}</td>
+                    <td>{{post.REMOTE_ADDR}}</td>
+                    <td>{{post.REQUEST_METHOD}}</td>
+                    <td>{{post.REQUEST_URI}}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

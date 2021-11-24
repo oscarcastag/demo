@@ -1,0 +1,978 @@
+        Encuesta:1 Fecha:30/07/2019 Usuario:oscar
+
+        
+        
+        
+        
+        
+        Nombre: Oscar 
+        Empresa: Focus 
+        área: TI 
+        Ubicación: Maricopa 
+        :  
+
+CCA Cuestionario Clientes VIP - FOCUS
+
+        
+        
+
+Nombre
+
+        Oscar
+        -----
+
+Empresa
+
+        Focus
+        -----
+
+área
+
+        TI
+        --
+
+Ubicación
+
+        Maricopa
+        --------
+
+1. ¿Cuáles son los aspectos que más le gustan del servicio que FOCUS le proporciona?
+
+        PReg-1
+        ------
+
+2. ¿Cuáles son los aspectos que menos le gustan del servicio que  FOCUS le proporciona?
+
+        PReg-2
+        ------
+
+3. ¿Directamente le toca participar en el proceso de compra de los productos FOCUS?
+
+        PReg-3
+        ------
+
+4. En general, ¿Cuáles considera que son los aspectos positivos y negativos del proceso de compra y recepción de pedido?
+
+        PReg-4
+        ------
+
+Positivos
+
+        Positivos
+        ---------
+
+Negativos
+
+        Negativos
+        ---------
+
+Material de apoyo
+Que la información (folletos, muestrarios) del producto sea completa y funcional
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Promociones
+(Si la promoción le queda clara)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Oportunidad en visitas
+(Son suficientes las visitas y eficientes)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Eficiencia en alta de clientes
+(Que tan eficiente es el proceso de alta como cliente)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Poder de negociación
+(Alcance del poder de negociación que tiene el vendedor)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Entendimiento de necesidades
+(Capacidad para comprender las necesidades del usuario y entregar servicios acorde a lo requerido)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Cumplimiento de los requerimientos del cliente
+(Que se responde a todas sus necesidades como cliente)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Confiabilidad
+(Habilidad para cumplir los tiempos y compromisos establecidos en la venta)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Valor
+(Costo / Beneficio)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Flexibilidad
+(Qué se muestren abiertos ante los cambios)
+
+        Importancia
+
+        1
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Tiempos de negociación
+(Tiempos de liberación del contrato de acuerdo a sus necesidades como cliente)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Facilidad para hacer negocio
+(Disponibilidad para cerrar acuerdos)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Confirmación de pedido
+(Responsabilidad que adquiere al confirmar su pedido para evitar  errores en dirección de entrega, en precio,  en producto, etc.)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Confiabilidad
+Habilidad para cumplir los tiempos y compromisos establecidos
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Oportunidad
+Entrega de productos y servicios en tiempos adecuados a las necesidades de los usuarios
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Efectividad
+Habilidad para que el servicio cumpla con lo definido o deseado
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Efectividad en reclamos
+Si son efectivos en la atención de reclamos
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Facturación
+Recibe a tiempo su documentación
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        3
+        -
+
+        Comentario
+
+        
+        
+
+Comunicación
+(Mantener al cliente informado de manera proactiva sobre estatus de sus pedidos)
+
+        Importancia
+
+        3
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Confiabilidad
+(Cumplimiento de niveles de servicio durante la operación)
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Actitud de servicio
+Disposición de ayudar y proveer un pronto servicio
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Atención de quejas 
+Existen procedimientos formales para atender las quejas de los Usuarios, son amables y muestran interés por solucionar o corregir la causa de la queja
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Accesibilidad
+La facilidad de localizar al personal adecuado para la atención de un requerimiento
+
+        Importancia
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Alternativas de solución
+Creatividad y conocimientos actualizados para proponer opciones de solución y atención de requerimientos
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Atención telefónica
+Al comunicarse lo atienden con prontitud, lo pasan con la persona correcta, son amables y atentos. Las llamadas no se "pierden".
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Fiabilidad del personal
+El personal ofrece seguridad o confianza sobre los comentarios o interacción que realiza.
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Cumplimiento de expectativas
+Los productos cumplen con los estándares establecidos
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Confiabilidad
+Cumples con las normas de calidad establecidas
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Diseño
+Características físicas visuales que hacen atractivo al producto.
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        1
+        -
+
+        Comentario
+
+        
+        
+
+Garantía
+Compromiso temporal que la compañía  ofrece al cliente, en caso de presentar alguna falla.
+
+        Importancia
+
+        3
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Orientación al cliente
+Los servicios, cumplen con los requerimientos y proporcionan la información que los clientes requieren
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        5
+        -
+
+        Comentario
+
+        
+        
+
+Conocimiento del cliente
+Se conocen los requerimientos y necesidades de las clientes
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        3
+        -
+
+        Comentario
+
+        
+        
+
+Responsabilidad ambiental / social
+Capacidad de la organización de estar orientada / sensibilizada para respetar el medio ambiente y la comunidad.
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Responsabilidad ética
+La compañía respeta las normas de la industria y de los diferentes organismos reguladores
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+Certificaciones
+Conoces las certificaciones con que cuenta la compañía
+
+        Importancia
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+        Percepción
+
+        4
+        -
+
+        Comentario
+
+        
+        
+
+¿Además de PB, MDF,  melanina, mencione 3 productos que conoce o recuerde de FOCUS?
+
+        MElamina
+        --------
+
+¿Algún otro producto que considera que le gustaría que FOCUS tuviera?
+
+        Productos
+        ---------
+
+¿Qué le gustaría conocer acerca del portafolio de productos?
+
+        Portafolio
+        ----------
+
+Usted compra resina a FOCUS?
+
+        Resina
+        ------
+
+¿En general cómo consideras el servicio de SERVICIO_A_EVALUAR que forma parte de grupo FOCUS?
+
+        Bueno
+        -----
+
+¿Con qué adjetivo, sólo uno, describiría el servicio que le ha proporcionado FOCUS?
+
+        Facilitador (agiliza la solución)
+        ---------------------------------
+
+¿Cómo considera a FOCUS con relación a la competencia?
+
+        Igual
+        -----
+
+¿Por qué?
+
+        Igual -
+        -------
+
+¿A quién(es) considera como el principal competidor de FOCUS?
+
+        principal-
+        ----------
+
+¿Cuáles son las razones por las que no se va con la competencia?
+
+        competencia
+        -----------
+
+¿Ha visto, escuchado o leído en algún medio algo sobre FOCUS?
+
+        No
+        --
+
+¿Cual?
+
+        ok
+        --
+
+¿Ha asistido a algún evento donde haya estado FOCUS presente?
+
+        Sí
+        --
+
+¿Cual?
+
+        
+        
+
+¿Qué se le viene a la mente con la marca de FOCUS?
+
+        
+        
+
+En general, ¿qué tan satisfecho se siente con el servicio que se le ha proporcionado?
+
+        Muy satisfecho
+        --------------
+
+¿Recomendaría a FOCUS como proveedor de servicios?
+
+        Totalmente de acuerdo
+        ---------------------
+
+¿Por qué?:
+
+        
+        
+
+¿Cuánto esfuerzo personal (tiempo, costo emocional, vueltas) le ha supuesto solicitar sus requerimientos a FOCUS?
+
+        Muy poco esfuerzo
+        -----------------
+
+¿Cree que FOCUS hace lo que es mejor para usted como cliente, con el objetivo de cubrir sus necesidades y requerimientos?
+
+        Totalmente de acuerdo
+        ---------------------
+
+A fin de mejorar el servicio de FOCUS, ¿qué consejo le daría al Director xxx?
+
+        
+        
+

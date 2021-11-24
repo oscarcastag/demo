@@ -1,0 +1,87 @@
+<?php
+
+/**
+ * @copyright (c) 2017, RockJS Framework by Focus On Serivices
+ * @version 1.0
+ * @requires OpenEdge 102b or 91d
+ * @author RockJS Framework by Focus On Serivices
+ * @license http://focusonservices.com/rockjs FOCUS ON SERVICES
+ * @throws Windows Server Version
+ * 
+ */
+/*
+  |--------------------------------------------------------------------------
+  | Service Web
+  |--------------------------------------------------------------------------
+  | Debe especificar el nombre del programa .P Transformado por RockJS  definida en $_GET["p"]
+  | La funcion setProgram hace el llamado al programa .P y lleva a cabo su ejecucion
+  | Mostrando el setResult con el atributo $Rockobj
+  | Puede modificar el llamado con variables estaticas o como mejor convenga
+ */
+
+include_once "rockjs/openrockjs.php";
+//agregamos el script de configuracion RockJS a nuestro proyecto
+include_once "rockjs/RockJSconf.php";
+//variable de errores
+$errorMSG = "";
+//secure constant: boleana
+$secure = constant("secure");
+/**
+ * @abstract getSession
+ * @static funcion que evalua var: secure para definir seguridad por SESSION 
+ * @param type $secure Description  El valor determina si usara seguridad mediante SESSION
+ */
+switch ($secure) {
+    case true:
+        //Si $secure es verdadero incluimos las autenticacion de session
+        include 'config/session.php';
+        break;
+    case false:
+        break;
+    default:
+        $errorMSG = "<pre>Error in Default Session Settings value:  $secure <br>check the <strong>configuration file</strong><pre>";
+}
+
+/**
+ * @param $_GET["p"] Description:
+ * Recibe el nombre del programa Progress a Ejecutar
+ */
+if (empty($_GET["p"])) {
+    $errorMSG .= 'p empty ';
+} else {
+    $prog = $_GET["p"];
+}
+// si no hay errores procedemos a invocar RockJS
+if ($errorMSG == "") {
+    setProgram($prog);
+} else {
+    if ($errorMSG == "") {
+        echo " Something went wrong : Login invalid ";
+    } else {
+        echo $errorMSG;
+    }
+}
+
+/**
+ * 
+ * @param type $prog Description:
+ * Define el objeto programa Progress concatenando los elementos necesarios 
+ * para la ejecucion en RockJS
+ */
+function setProgram($prog) {
+    /* Creación del objeto RockJS */
+    $Rockobj = new RockJS;
+    /**
+     * @method type _openrockjs(type $Programa) Description:
+     * Crea una instancia de la clase RockJS y retorna una valor Boleano
+     * False: Error
+     * True: Muestra el resultado de la ejecucion
+     */
+    if ($Rockobj->_openrockjs($prog) == false) {
+        echo 'Something went wrong please try again';
+    } else {
+        echo $Rockobj->setResult;
+    }
+}
+
+?>

@@ -1,0 +1,111 @@
+<?php
+
+/**
+ * @copyright (c) 2017, RockJS Framework by Focus On Serivices
+ * @version 1.0
+ * @requires OpenEdge 102b or 91d
+ * @author RockJS Framework by Focus On Serivices
+ * @license http://focusonservices.com/rockjs FOCUS ON SERVICES
+ * @throws Windows Server Version
+ * 
+ */
+//agregamos RockJS a nuestro proyecto
+include_once "../rockjs/openrockjs.php";
+//agregamos el script de configuracion RockJS a nuestro proyecto
+include_once "../rockjs/RockJSconf.php";
+//variable de errores
+$errorMSG = "";
+/**
+ * @param $_POST["p"] Description:
+ * Recibe el nombre del programa Progress a Ejecutar
+ */
+if (empty($_POST["p"])) {
+    $errorMSG = ' p empty ';
+}
+// Recibimos usuario y password
+if (empty($_POST["cliente_vida"]) || empty($_POST["pass_cv"])) {
+    $errorMSG .= " Error empty data to login";
+} else {
+    $prog = $_POST["p"];
+}
+// si no hay errores
+if ($errorMSG == "") {
+    setProgram($prog);
+} else {
+    if ($errorMSG == "") {
+        echo " Something went wrong : Login invalid ";
+    } else {
+        echo $errorMSG;
+    }
+}
+
+/**
+ * 
+ * @param type $prog Description:
+ * Define el objeto programa Progress concatenando los elementos necesarios 
+ * para la ejecucion en RockJS
+ */
+function setProgram($prog) {
+    /* Creación del objeto RockJS */
+    $Rockobj = new RockJS;
+    /**
+     * @method type _openrockjs(type $Programa) Description:
+     * Crea una instancia de la clase RockJS y retorna una valor Boleano
+     * False: Error
+     * True: Muestra el resultado de la ejecucion
+     */
+    if ($Rockobj->_openrockjs($prog) == false) {
+        echo 'Something went wrong please try again';
+    } else {
+        //almacenamos el array de resuesta de progress 
+        $ReuqestLogin = $Rockobj->setResult;
+        /* separamos er array en variables 
+         * [0]=validacion de acceso, 
+         * [1]=usuario
+         * [2]=id
+         * [3]=role
+         */
+        $Data = explode("|", $ReuqestLogin);
+        //Evaliamos el primer dato que es la autorizacion de progress de acceso al sistema
+        switch ($Data[0]) {
+            case "success":
+                //echo ' Logedin Correct vars sessions are set ';
+                //echo "Welcome $Data[1] ";
+                // Start the session
+                session_start();
+                // Set vars sessions
+                $_SESSION["usuario"] = $Data[1];
+                $_SESSION["id_user"] = $Data[2];
+                $_SESSION["type"] = $Data[3];
+                $_SESSION['loggedin'] = true;
+                $_SESSION['start'] = time();
+
+                //*TOKEN WEB*//
+                $token = md5(uniqid(rand(), TRUE));
+                $_SESSION['token'] = $token;
+                $_SESSION['token_nacimiento'] = time();
+                //*TOKEN WEB*//
+                //define duracion de la session
+                //Tiempo de vida de la session
+                $lifetime = constant("lifetime");
+                $_SESSION['expire'] = $_SESSION['start'] + (60 * $lifetime);
+                //define el menu que vera el usuario
+                if ($Data[3] == "visit") {
+                    $_SESSION["menu"] = "consulta";
+                } else {
+                    $_SESSION["menu"] = "administrador";
+                }
+                //respondemos al cliente que ha sido logueaco correctamente
+                echo "success";
+                break;
+            case "error login":
+                echo 'Logedin Incorrect vars sessions are not set';
+                break;
+            default:
+                break;
+                echo 'Something went wrong please try again';
+        }
+    }
+}
+
+?>
